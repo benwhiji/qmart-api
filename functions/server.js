@@ -31,7 +31,7 @@ const players = [
         "position": "Goalkeeper",
         "age": 29,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Brandon+Petersen&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/268567-1715331381.jpg?lm=1"
     },
     {
         "name": "Itumeleng Khune",
@@ -47,7 +47,7 @@ const players = [
         "position": "Goalkeeper",
         "age": 21,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Karabo+Molefe&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/655033-1614589017.jpg?lm=1"
     },
     {
         "name": "Edmilson Dove",
@@ -55,7 +55,7 @@ const players = [
         "position": "Defender",
         "age": 29,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Edmilson+Dove&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/426964-1715331742.jpg?lm=1"
     },
     {
         "name": "Zitha Kwinika",
@@ -63,7 +63,7 @@ const players = [
         "position": "Defender",
         "age": 30,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Zitha+Kwinika&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/332245-1715331684.jpg?lm=1
     },
     {
         "name": "Dillan Solomons",
@@ -71,7 +71,7 @@ const players = [
         "position": "Defender",
         "age": 27,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Dillan+Solomons&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/426964-1715331742.jpg?lm=1"
     },
     {
         "name": "Happy Mashiane",
@@ -79,7 +79,7 @@ const players = [
         "position": "Defender",
         "age": 26,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Happy+Mashiane&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/554214-1715332180.jpg?lm=1"
     },
     {
         "name": "Thabo Mokoena",
@@ -87,7 +87,7 @@ const players = [
         "position": "Defender",
         "age": 24,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Thabo+Mokoena&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/header/default.jpg?lm=1"
     },
     {
         "name": "Siyethemba Sithebe",
@@ -95,7 +95,7 @@ const players = [
         "position": "Midfielder",
         "age": 31,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Siyethemba+Sithebe&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/header/420546-1715332594.jpg?lm=1"
     },
     {
         "name": "Yusuf Maart",
@@ -103,7 +103,7 @@ const players = [
         "position": "Midfielder",
         "age": 28,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Yusuf+Maart&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/494384-1715332538.jpg?lm=1"
     },
     {
         "name": "Mduduzi Mdantsane",
@@ -111,7 +111,7 @@ const players = [
         "position": "Midfielder",
         "age": 29,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Mduduzi+Mdantsane&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/510067-1715332884.jpg?lm=1"
     },
     {
         "name": "Nkosingiphile Ngcobo",
@@ -119,7 +119,7 @@ const players = [
         "position": "Midfielder",
         "age": 24,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Nkosingiphile+Ngcobo&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/471293-1715332945.jpg?lm=1"
     },
     {
         "name": "Edson Castillo",
@@ -127,7 +127,7 @@ const players = [
         "position": "Midfielder",
         "age": 30,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Edson+Castillo&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/235702-1715332669.jpg?lm=1"
     },
     {
         "name": "Sabelo Radebe",
@@ -135,7 +135,7 @@ const players = [
         "position": "Midfielder",
         "age": 24,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Sabelo+Radebe&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/467614-1715332833.jpg?lm=1"
     },
     {
         "name": "Keagan Dolly",
@@ -143,7 +143,7 @@ const players = [
         "position": "Forward",
         "age": 31,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Keagan+Dolly&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/234006-1715333121.jpg?lm=1"
     },
     {
         "name": "Ashley Du Preez",
@@ -151,7 +151,7 @@ const players = [
         "position": "Forward",
         "age": 26,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Ashley+Du+Preez&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/478498-1715333246.jpg?lm=1"
     },
     {
         "name": "Christian Saile",
@@ -159,7 +159,7 @@ const players = [
         "position": "Forward",
         "age": 24,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Christian+Saile&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/1099035-1715333564.jpg?lm=1"
     },
     {
         "name": "Pule Mmodi",
@@ -167,7 +167,7 @@ const players = [
         "position": "Forward",
         "age": 31,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Pule+Mmodi&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/613120-1715333194.jpg?lm=1"
     },
     {
         "name": "Ranga Chivaviro",
@@ -175,7 +175,7 @@ const players = [
         "position": "Forward",
         "age": 31,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Ranga+Chivaviro&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/417766-1715333520.jpg?lm=1"
     }
 
 
