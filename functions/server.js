@@ -23,7 +23,7 @@ const players = [
         "position": "Goalkeeper",
         "age": 29,
         "start_date": "2023-06-30",
-        "google_image_url": "https://www.google.com/search?q=Bruce+Bvuma&tbm=isch"
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/498985-1715331461.jpg?lm=1"
     },
     {
         "name": "Brandon Petersen",
