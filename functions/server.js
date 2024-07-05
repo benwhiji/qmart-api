@@ -63,7 +63,7 @@ const players = [
         "position": "Defender",
         "age": 30,
         "start_date": "2023-06-30",
-        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/332245-1715331684.jpg?lm=1
+        "google_image_url": "https://img.a.transfermarkt.technology/portrait/big/332245-1715331684.jpg?lm=1"
     },
     {
         "name": "Dillan Solomons",
