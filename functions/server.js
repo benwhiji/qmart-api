@@ -13,6 +13,7 @@ app.use(express.json());
 
 // Enable CORS for all routes
 app.use(cors());
+app.options('*', cors());
 // Player data
 const players = [
   
