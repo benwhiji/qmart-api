@@ -188,31 +188,36 @@ const schedule = [
         "date": "2024-07-01",
         "time": "18:00",
         "opponent": "Orlando Pirates",
-        "venue": "FNB Stadium"
+        "venue": "FNB Stadium",
+        "url": "https://tmssl.akamaized.net/images/wappen/head/2557.png?lm=1474757243"
     },
     {
         "date": "2024-07-05",
         "time": "15:30",
         "opponent": "Mamelodi Sundowns",
-        "venue": "Loftus Versfeld Stadium"
+        "venue": "Loftus Versfeld Stadium",
+        "url": "https://tmssl.akamaized.net/images/wappen/head/6356.png?lm=1611130082"
     },
     {
         "date": "2024-07-10",
         "time": "20:00",
         "opponent": "Cape Town City",
-        "venue": "Cape Town Stadium"
+        "venue": "Cape Town Stadium",
+        "url": "https://tmssl.akamaized.net/images/wappen/head/2303.png?lm=1488051605"
     },
     {
         "date": "2024-07-15",
         "time": "16:00",
         "opponent": "SuperSport United",
-        "venue": "Lucas Masterpieces Moripe Stadium"
+        "venue": "Lucas Masterpieces Moripe Stadium",
+        "url": "https://tmssl.akamaized.net/images/wappen/head/2891.png?lm=1474825244"
     },
     {
         "date": "2024-07-20",
         "time": "19:30",
         "opponent": "Stellenbosch FC",
-        "venue": "Danie Craven Stadium"
+        "venue": "Danie Craven Stadium",
+        "url": "https://tmssl.akamaized.net/images/wappen/small/23287.png?lm=1567439992"
     }
 
 
