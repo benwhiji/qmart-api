@@ -233,7 +233,8 @@ const matchResults = [
         "score": "1-5",
         "opp_url": "https://tmssl.akamaized.net/images/wappen/head/6356.png?lm=1611130082",
         "cha_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
-        "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/"
+        "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/",
+        "status":"LOOSE"
     },
     {
         "date": "2024-05-07",
@@ -242,7 +243,8 @@ const matchResults = [
         "score": "2-2",
         "cha_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
         "opp_url": "https://tmssl.akamaized.net/images/wappen/head/67074.png?lm=1543132402",
-        "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/"
+        "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/",
+        "status":"DRAW"
     },
     {
         "date": "2024-04-15",
@@ -251,7 +253,8 @@ const matchResults = [
         "score": "3-1",
         "cha_url": "https://tmssl.akamaized.net/images/wappen/head/2557.png?lm=1474757243",
         "opp_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
-        "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs"
+        "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs",
+        "status":"LOOSE"
     },
     {
         "date": "2024-03-22",
@@ -260,7 +263,8 @@ const matchResults = [
         "score": "0-0",
         "cha_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
         "opp_url": "https://tmssl.akamaized.net/images/wappen/head/2303.png?lm=1488051605",
-        "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs"
+        "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs",
+        "status":"DRAW"
     },
     {
         "date": "2023-12-10",
@@ -269,7 +273,8 @@ const matchResults = [
         "score": "2-1",
         "cha_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
         "opp_url": "https://tmssl.akamaized.net/images/wappen/head/9370.png?lm=1499719939",
-        "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi"
+        "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi",
+        "status":"WIN"
     },
     {
         "date": "2023-11-05",
@@ -279,7 +284,8 @@ const matchResults = [
         
         "cha_url":"https://tmssl.akamaized.net/images/wappen/head/568.png?lm=1404764408",
         "opp_url": "https://tmssl.akamaized.net/images/wappen/head/2891.png?lm=1474825244",
-        "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi"
+        "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi",
+        "status":"DRAW"
     }
 
   // Add more players here if needed
