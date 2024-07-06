@@ -49,7 +49,7 @@ router.get('/api/results', (req, res) => {
 });
 
 // Endpoint to add a comment
-app.post('/api/comments', (req, res) => {
+router.post('/api/comments', (req, res) => {
     const { name, comment } = req.body;
     const created_at = new Date();
 
