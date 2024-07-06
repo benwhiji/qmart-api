@@ -223,12 +223,14 @@ const matchResults = [
  
     {
         "date": "2024-05-02",
+        "Challenger": "Kaizer Chiefs",
         "opponent": "Mamelodi Sundowns",
         "score": "1-5",
         "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/"
     },
     {
         "date": "2024-05-07",
+        "Challenger":"Kaizer Chiefs",
         "opponent": "TS Galaxy",
         "score": "2-2",
         "highlights_url": "https://za.soccerway.com/teams/south-africa/kaizer-chiefs/3528/matches/"
@@ -241,18 +243,21 @@ const matchResults = [
     },
     {
         "date": "2024-03-22",
+        "Challenger":"Kaizer Chiefs",
         "opponent": "Cape Town City",
         "score": "0-0",
         "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs"
     },
     {
         "date": "2023-12-10",
+        "Challenger":"Kaizer Chiefs",
         "opponent": "AmaZulu",
         "score": "2-1",
         "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi"
     },
     {
         "date": "2023-11-05",
+        "Challenger":"Kaizer Chiefs",
         "opponent": "SuperSport United",
         "score": "1-1",
         "highlights_url": "https://www.goal.com/en-za/team/kaizer-chiefs/fixtures-results/9g72y015b6fgkgtpx1c67qemi"
