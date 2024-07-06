@@ -2,15 +2,13 @@ const express = require('express');
 const serverless = require('serverless-http');
 const fs = require('fs');
 const path = require('path');
+const mysql = require('mysql2');
 
 const app = express();
 const router = express.Router();
 
 // Middleware to parse JSON
 app.use(express.json());
-
-const mysql = require('mysql2');
-
 
 // MySQL database connection
 const db = mysql.createConnection({
@@ -29,6 +27,12 @@ db.connect((err) => {
     }
     console.log('Connected to the database as ID', db.threadId);
 });
+
+// Function to send error responses
+function sendErrorResponse(res, statusCode, message) {
+    res.status(statusCode).json({ error: message });
+}
+
 // Endpoint to get match schedule
 router.get('/api/schedule', (req, res) => {
     const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'schedule.json'), 'utf-8'));
@@ -97,7 +101,6 @@ router.get('/api/comments', (req, res) => {
         res.json(results);
     });
 });
-
 
 app.use('/.netlify/functions/server', router);
 
