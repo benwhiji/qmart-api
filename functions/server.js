@@ -1,7 +1,16 @@
 const express = require('express');
-const mysql = require('mysql2');
+const serverless = require('serverless-http');
 const fs = require('fs');
 const path = require('path');
+
+const app = express();
+const router = express.Router();
+
+// Middleware to parse JSON
+app.use(express.json());
+
+const mysql = require('mysql2');
+const { v4: uuidv4 } = require('uuid');
 const { DateTime } = require('luxon');
 
 // MySQL database connection
@@ -21,81 +30,51 @@ db.connect((err) => {
     }
     console.log('Connected to the database as ID', db.threadId);
 });
-
-const app = express();
-const PORT = process.env.PORT || 8000;
-
-// Middleware to parse JSON bodies
-app.use(express.json());
-
-// Helper function for error responses
-const sendErrorResponse = (res, statusCode, message) => {
-    return res.status(statusCode).json({ error: message });
-};
-
 // Endpoint to get match schedule
-app.get('/api/schedule', (req, res) => {
-    try {
-        const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'schedules.json'), 'utf-8'));
-        res.json(schedule);
-    } catch (err) {
-        sendErrorResponse(res, 500, 'Internal Server Error');
-    }
+router.get('/api/schedule', (req, res) => {
+    const schedule = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'schedule.json'), 'utf-8'));
+    res.json(schedule);
 });
 
 // Endpoint to get player profiles
-app.get('/api/players', (req, res) => {
-    try {
-        const players = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'players.json'), 'utf-8'));
-        res.json(players);
-    } catch (err) {
-        sendErrorResponse(res, 500, 'Internal Server Error');
-    }
+router.get('/api/players', (req, res) => {
+    const players = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'player.json'), 'utf-8'));
+    res.json(players);
 });
 
 // Endpoint to get match results
-app.get('/api/results', (req, res) => {
-    try {
-        const matchResults = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'match.json'), 'utf-8'));
-        res.json(matchResults);
-    } catch (err) {
-        sendErrorResponse(res, 500, 'Internal Server Error');
-    }
+router.get('/api/results', (req, res) => {
+    const matchResults = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'match.json'), 'utf-8'));
+    res.json(matchResults);
 });
 
 // Endpoint to add a comment
 app.post('/api/comments', (req, res) => {
     const { name, comment } = req.body;
-    const created_at = DateTime.now().toFormat('yyyy-MM-dd HH:mm:ss');
+    const created_at = new Date();
 
     const query = 'INSERT INTO `fan-comments` (name, comment, created_at) VALUES (?, ?, ?)';
     db.query(query, [name, comment, created_at], (err, result) => {
-        if (err) {
-            console.error('Failed to add comment:', err);
-            return sendErrorResponse(res, 500, 'Failed to add comment');
-        }
+        if (err) return sendErrorResponse(res, 500, 'Failed to add comment');
         res.status(201).json({ message: 'Comment added', id: result.insertId });
     });
 });
 
 // Endpoint to reply to a comment
-app.post('/api/comments/:commentId/reply', (req, res) => {
+router.post('/api/comments/:commentId/reply', (req, res) => {
     const { commentId } = req.params;
     const { fan_name, fan_reply } = req.body;
-    const created_at = DateTime.now().toFormat('yyyy-MM-dd HH:mm:ss');
+    const created_at = new Date();
 
     const query = 'INSERT INTO `fan-comment-reply` (comment_id, fan_name, fan_reply, created_at) VALUES (?, ?, ?, ?)';
     db.query(query, [commentId, fan_name, fan_reply, created_at], (err, result) => {
-        if (err) {
-            console.error('Failed to add reply:', err);
-            return sendErrorResponse(res, 500, 'Failed to add reply');
-        }
+        if (err) return sendErrorResponse(res, 500, 'Failed to add reply');
         res.status(201).json({ message: 'Reply added', id: result.insertId });
     });
 });
 
 // Endpoint to get all comments or filter by comment ID and replies
-app.get('/api/comments', (req, res) => {
+router.get('/api/comments', (req, res) => {
     const { commentId } = req.query;
 
     let query;
@@ -115,15 +94,13 @@ app.get('/api/comments', (req, res) => {
     }
 
     db.query(query, [commentId], (err, results) => {
-        if (err) {
-            console.error('Failed to retrieve comments:', err);
-            return sendErrorResponse(res, 500, 'Failed to retrieve comments');
-        }
+        if (err) return sendErrorResponse(res, 500, 'Failed to retrieve comments');
         res.json(results);
     });
 });
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+
+app.use('/.netlify/functions/server', router);
+
+module.exports = app;
+module.exports.handler = serverless(app);
