@@ -242,7 +242,8 @@ const matchResults = [
     },
     {
         "date": "2024-04-15",
-        "opponent": "Orlando Pirates",
+        "Challenger":"Orlando Pirates",
+        "opponent": "Kaizer Chiefs",
         "score": "3-1",
         "highlights_url": "https://www.besoccer.com/team/matches/kaizer-chiefs"
     },
